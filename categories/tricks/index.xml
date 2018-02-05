@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on true positives</title>
-    <link>/tags/</link>
-    <description>Recent content in Tags on true positives</description>
+    <title>Tricks on true positives</title>
+    <link>/categories/tricks/</link>
+    <description>Recent content in Tricks on true positives</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>fede.garza.ramirez@gmail.com (Federico Garza)</managingEditor>
     <webMaster>fede.garza.ramirez@gmail.com (Federico Garza)</webMaster>
     <lastBuildDate>Mon, 05 Feb 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/tricks/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Ggplot2</title>
-      <link>/tags/ggplot2/</link>
+      <title>Second axis in R with ggplot2</title>
+      <link>/post/second-axis-in-r-with-ggplot2/</link>
       <pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate>
       <author>fede.garza.ramirez@gmail.com (Federico Garza)</author>
-      <guid>/tags/ggplot2/</guid>
+      <guid>/post/second-axis-in-r-with-ggplot2/</guid>
       <description></description>
     </item>
     

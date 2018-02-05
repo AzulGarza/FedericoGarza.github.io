@@ -2,21 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>true positives</title>
-    <link>https://username.github.io/</link>
+    <link>/</link>
     <description>Recent content on true positives</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>fede.garza.ramirez@gmail.com (Federico Garza)</managingEditor>
     <webMaster>fede.garza.ramirez@gmail.com (Federico Garza)</webMaster>
+    <lastBuildDate>Mon, 05 Feb 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://username.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Second axis in R with ggplot2</title>
+      <link>/post/second-axis-in-r-with-ggplot2/</link>
+      <pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate>
+      <author>fede.garza.ramirez@gmail.com (Federico Garza)</author>
+      <guid>/post/second-axis-in-r-with-ggplot2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>About me</title>
-      <link>https://username.github.io/page/about/</link>
+      <link>/page/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>fede.garza.ramirez@gmail.com (Federico Garza)</author>
-      <guid>https://username.github.io/page/about/</guid>
+      <guid>/page/about/</guid>
       <description>My name is Inigo Montoya. I have the following qualities:
  I rock a great mustache I&amp;rsquo;m extremely loyal to my family  What else do you need?
 my history To be honest, I&amp;rsquo;m having some trouble remembering right now, so why don&amp;rsquo;t you just watch my movie and it will answer all your questions.</description>
