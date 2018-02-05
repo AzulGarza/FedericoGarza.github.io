@@ -18,7 +18,7 @@
       <pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate>
       <author>fede.garza.ramirez@gmail.com (Federico Garza)</author>
       <guid>/post/second-axis-in-r-with-ggplot2/</guid>
-      <description></description>
+      <description>purrr::map(c(&amp;quot;AER&amp;quot;, &amp;quot;dplyr&amp;quot;, &amp;quot;ggplot2&amp;quot;), library, character.only = T)## Loading required package: car## Loading required package: lmtest## Loading required package: zoo## ## Attaching package: &amp;#39;zoo&amp;#39;## The following objects are masked from &amp;#39;package:base&amp;#39;:## ## as.Date, as.Date.numeric## Loading required package: sandwich## Loading required package: survival## ## Attaching package: &amp;#39;dplyr&amp;#39;## The following object is masked from &amp;#39;package:car&amp;#39;:## ## recode## The following objects are masked from &amp;#39;package:stats&amp;#39;:## ## filter, lag## The following objects are masked from &amp;#39;package:base&amp;#39;:## ## intersect, setdiff, setequal, union</description>
     </item>
     
     <item>
