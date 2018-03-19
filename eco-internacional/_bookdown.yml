@@ -1,0 +1,5 @@
+bookdown: gitbook
+book_filename: "eco-internacional"
+language:
+  ui:
+  chapter_name: "Capítulo "
