@@ -19,7 +19,7 @@ La balanza comercial del país en el periodo $s$ y además
 $$
 CA_s = b_{s+1} - b_s = T_s + r_{s-1}b_s
 $$
-La cuenta corriente del país en el periodo $s$. La identidad anterior surge de la restricción presuúestal del agente representativo.  
+La cuenta corriente del país en el periodo $s$. La identidad anterior surge de la restricción presupuestal del agente representativo.  
 
 ## Condiciones de primer orden
 
