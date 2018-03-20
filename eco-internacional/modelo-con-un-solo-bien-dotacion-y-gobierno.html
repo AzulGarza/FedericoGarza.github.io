@@ -98,6 +98,14 @@
 <li class="chapter" data-level="4.5" data-path="modelo-con-un-solo-bien-dotacion-y-terminos-de-intercambio.html"><a href="modelo-con-un-solo-bien-dotacion-y-terminos-de-intercambio.html#solucion-2"><i class="fa fa-check"></i><b>4.5</b> Solución</a></li>
 <li class="chapter" data-level="4.6" data-path="modelo-con-un-solo-bien-dotacion-y-terminos-de-intercambio.html"><a href="modelo-con-un-solo-bien-dotacion-y-terminos-de-intercambio.html#ejemplo-2"><i class="fa fa-check"></i><b>4.6</b> Ejemplo</a></li>
 </ul></li>
+<li class="chapter" data-level="5" data-path="modelo-con-un-solo-bien-gobierno-y-produccion.html"><a href="modelo-con-un-solo-bien-gobierno-y-produccion.html"><i class="fa fa-check"></i><b>5</b> Modelo con un solo bien, gobierno y producción</a><ul>
+<li class="chapter" data-level="5.1" data-path="modelo-con-un-solo-bien-gobierno-y-produccion.html"><a href="modelo-con-un-solo-bien-gobierno-y-produccion.html#problema-de-optimizacion-3"><i class="fa fa-check"></i><b>5.1</b> Problema de optimización</a></li>
+<li class="chapter" data-level="5.2" data-path="modelo-con-un-solo-bien-gobierno-y-produccion.html"><a href="modelo-con-un-solo-bien-gobierno-y-produccion.html#condiciones-de-primer-orden-3"><i class="fa fa-check"></i><b>5.2</b> Condiciones de primer orden</a></li>
+<li class="chapter" data-level="5.3" data-path="modelo-con-un-solo-bien-gobierno-y-produccion.html"><a href="modelo-con-un-solo-bien-gobierno-y-produccion.html#restriccion-presupuestal-3"><i class="fa fa-check"></i><b>5.3</b> Restricción presupuestal</a></li>
+<li class="chapter" data-level="5.4" data-path="modelo-con-un-solo-bien-gobierno-y-produccion.html"><a href="modelo-con-un-solo-bien-gobierno-y-produccion.html#supuestos-habituales-2"><i class="fa fa-check"></i><b>5.4</b> Supuestos habituales</a><ul>
+<li class="chapter" data-level="5.4.1" data-path="modelo-con-un-solo-bien-gobierno-y-produccion.html"><a href="modelo-con-un-solo-bien-gobierno-y-produccion.html#choque-en-la-productividad"><i class="fa fa-check"></i><b>5.4.1</b> Choque en la productividad</a></li>
+</ul></li>
+</ul></li>
 </ul>
 
       </nav>
@@ -119,7 +127,7 @@
 <h1><span class="header-section-number">3</span> Modelo con un solo bien, dotación y gobierno</h1>
 <div id="gobierno" class="section level2">
 <h2><span class="header-section-number">3.1</span> Gobierno</h2>
-<p>En este caso el gobierno compra <span class="math inline">\(g_s\)</span> cantidad del bien en la economía para cada <span class="math inline">\(s \geq t\)</span>; es decir, la senda de compras del gobierno <span class="math inline">\(\{g_s\}_{s \geq t}\)</span> está dada. Para financiar estas compras, el gobierno establece un impuesto de suma fija <span class="math inline">\(\tau_s\)</span> para cada <span class="math inline">\(s \geq t\)</span> y además se endeuda a la misma tasa a la que el agente representativo presta bonos. Se denota como <span class="math inline">\(d_{s-1}\)</span> para <span class="math inline">\(s \geq t\)</span> la deuda del gobierno. Por lo tanto, la restricción presupuestal del gobierno está dada por</p>
+<p>En este caso el gobierno compra <span class="math inline">\(g_s\)</span> cantidad del bien en la economía para cada <span class="math inline">\(s \geq t\)</span>; es decir, la senda de compras del gobierno <span class="math inline">\(\{g_s\}_{s \geq t}\)</span> está dada. Para financiar estas compras, el gobierno establece un impuesto de suma fija <span class="math inline">\(\tau_s\)</span> para cada <span class="math inline">\(s \geq t\)</span> y además se endeuda a la misma tasa a la que el agente representativo presta bonos. Se denota como <span class="math inline">\(d_{s-1}\)</span> para <span class="math inline">\(s \geq t\)</span> la deuda del gobierno con <span class="math inline">\(d_t\)</span> dada. Por lo tanto, la restricción presupuestal del gobierno está dada por</p>
 <p><span class="math display" id="eq:rpgob">\[
 \begin{equation}
 g_s = \tau_s + d_{s+1} - (1+r_{s-1})d_s
@@ -142,9 +150,10 @@ g_s = \tau_s + d_{s+1} - (1+r_{s-1})d_s
 <h2><span class="header-section-number">3.2</span> Problema de optimización</h2>
 <p>El objetivo del agente representativo es,</p>
 <p><span class="math display">\[
-\max_{c_s, s\geq t} \{ \sum_{s \geq t} \beta^{s-t}(\ln(c_s) + v(g_s)): c_s + \tau_s + b_{s+1} = y_s + (1+r_{s-1})b_s, s \geq t \} 
+\max_{c_s, b_{s+1}, s\geq t} \{ \sum_{s \geq t} \beta^{s-t}(\ln(c_s) + v(g_s)): c_s + \tau_s + b_{s+1} = y_s + (1+r_{s-1})b_s, s \geq t \} 
 \]</span></p>
-<p>Despejando <span class="math inline">\(\tau_s\)</span> de <a href="modelo-con-un-solo-bien-dotacion-y-gobierno.html#eq:rpgob">(3.1)</a> y sustituyendo en la restricción presuestal del agente representativo obtenemos que,</p>
+<p>En este problema están dados <span class="math inline">\(\{y_s, r_{s-1}, g_s\}_{s\geq t}\)</span>, <span class="math inline">\(b_t\)</span> y <span class="math inline">\(d_t\)</span>.</p>
+<p>Despejando <span class="math inline">\(\tau_s\)</span> de <a href="modelo-con-un-solo-bien-dotacion-y-gobierno.html#eq:rpgob">(3.1)</a> y sustituyendo en la restricción presupuestal del agente representativo obtenemos que,</p>
 <p><span class="math display" id="eq:rpgobcons">\[
 \begin{equation}
 c_s + g_s + b_{s+1} - d_{s+1} = y_s + (1+r_{s-1})(b_s - d_s)

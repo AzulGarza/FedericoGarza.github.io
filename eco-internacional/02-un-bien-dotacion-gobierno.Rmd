@@ -2,7 +2,7 @@
 
 
 ##Gobierno
-En este caso el gobierno compra $g_s$ cantidad del bien en la economía para cada $s \geq t$; es decir, la senda de compras del gobierno $\{g_s\}_{s \geq t}$ está dada. Para financiar estas compras, el gobierno establece un impuesto de suma fija $\tau_s$ para cada $s \geq t$ y además se endeuda a la misma tasa a la que el agente representativo presta bonos. Se denota como $d_{s-1}$ para $s \geq t$ la deuda del gobierno. Por lo tanto, la restricción presupuestal del gobierno está dada por
+En este caso el gobierno compra $g_s$ cantidad del bien en la economía para cada $s \geq t$; es decir, la senda de compras del gobierno $\{g_s\}_{s \geq t}$ está dada. Para financiar estas compras, el gobierno establece un impuesto de suma fija $\tau_s$ para cada $s \geq t$ y además se endeuda a la misma tasa a la que el agente representativo presta bonos. Se denota como $d_{s-1}$ para $s \geq t$ la deuda del gobierno con $d_t$ dada. Por lo tanto, la restricción presupuestal del gobierno está dada por
 
 $$
 \begin{equation}
@@ -32,10 +32,12 @@ Donde $\hat{g_s}$ y $\hat{\tau_s}$ son el valor permanente de las compras del go
 El objetivo del agente representativo es,
 
 $$
-\max_{c_s, s\geq t} \{ \sum_{s \geq t} \beta^{s-t}(\ln(c_s) + v(g_s)): c_s + \tau_s + b_{s+1} = y_s + (1+r_{s-1})b_s, s \geq t \} 
+\max_{c_s, b_{s+1}, s\geq t} \{ \sum_{s \geq t} \beta^{s-t}(\ln(c_s) + v(g_s)): c_s + \tau_s + b_{s+1} = y_s + (1+r_{s-1})b_s, s \geq t \} 
 $$
 
-Despejando $\tau_s$ de \@ref(eq:rpgob) y sustituyendo en la restricción presuestal del agente representativo obtenemos que,
+En este problema están dados $\{y_s, r_{s-1}, g_s\}_{s\geq t}$, $b_t$ y $d_t$.
+
+Despejando $\tau_s$ de \@ref(eq:rpgob) y sustituyendo en la restricción presupuestal del agente representativo obtenemos que,
 
 $$
 \begin{equation}

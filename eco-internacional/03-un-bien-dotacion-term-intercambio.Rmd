@@ -9,7 +9,7 @@ En este modelo se introduce la variable $\Omega_s$ que denota el precio de las e
 El objetivo del agente representativo es
 
 $$
-\max_{c_s, s \geq t} \{ \sum_{s\geq t} \beta^{s-t}\ln(c_s):  c_s + b_{s+1} = \Omega_s y_s + (1+r_{s-1})b_s, s \geq t\}
+\max_{c_s, b_{s+1}, s \geq t} \{ \sum_{s\geq t} \beta^{s-t}\ln(c_s):  c_s + b_{s+1} = \Omega_s y_s + (1+r_{s-1})b_s, s \geq t\}
 $$
 
 En este problema están dados $\{y_s, r_{s-1}, \Omega_s\}_{s\geq t}$ y $b_t$. Se asume que $y_s$ se exporta por completo y $c_s$ se importa.

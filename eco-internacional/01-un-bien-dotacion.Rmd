@@ -5,7 +5,7 @@
 En este modelo en la economía existe un solo bien. En cada periodo la cantidad que consume el agente representativo se denota con $c_s$ para $s\geq t$. El objetivo del agente representativo es
 
 $$
-\max_{c_s, s \geq t} \{ \sum_{s\geq t} \beta^{s-t}\ln(c_s):  c_s + b_{s+1} = y_s + (1+r_{s-1})b_s, s \geq t\}
+\max_{c_s, b_{s+1}, s \geq t} \{ \sum_{s\geq t} \beta^{s-t}\ln(c_s):  c_s + b_{s+1} = y_s + (1+r_{s-1})b_s, s \geq t\}
 $$
 En donde $b_s$ denota la cantidad del bien que el agente representativo ahorra en el periodo $s$, $y_s$ la dotación del bien en el periodo $s$ y $r_s$ la tasa de interés del periodo $s$. Además, en este problema están dados $\{y_s, r_{s-1}\}_{s\geq t}$ y $b_t$. 
 
@@ -55,7 +55,7 @@ $$
 
 $$
 \sum_{s \geq t} \Delta_s c_s = (1+r_{t-1})b_t + \sum_{s \geq t} \Delta_s y_s
-$$
+$$b_
 Con lo anterior estamos listos para establecer resultados a partir de supuestos sobre las variables dadas. Pero antes enunciemos un **resultado fundamental**.
 
 ##Solución 
