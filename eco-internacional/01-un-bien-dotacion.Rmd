@@ -60,7 +60,7 @@ Con lo anterior estamos listos para establecer resultados a partir de supuestos 
 
 ##Solución 
 
-De la ecuación de euler sabemos que $c_{s+1} = \beta(1+r_s)c_s$ para cada $s \geq t$. Luego, para cada periodo $s \geq t$ y $j geq s$ se verfifica que,
+De la ecuación de euler sabemos que $c_{s+1} = \beta(1+r_s)c_s$ para cada $s \geq t$. Luego, para cada periodo $s \geq t$ y $j \geq s$ se verfifica que,
 
 $$
 \begin{align}
