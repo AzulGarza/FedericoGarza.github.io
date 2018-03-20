@@ -1,4 +1,4 @@
-#Modelo con un solo bien, dotación, gobierno y términos de intercambio
+#Modelo con un solo bien, dotación y términos de intercambio
 
 ## Términos de intercambio
 
