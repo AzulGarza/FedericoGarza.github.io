@@ -113,7 +113,7 @@ $$
 Supongamos que $r_{s-1} = r^*$, $\beta(1+r^*)=1$, $y_s = y$, $g_s = g$ para cada $s \geq t$ y que $b_t - d_t = 0$. De los primeros dos supuestos obtenemos que el consumo es el mismo en todos los periodos, esto es $c = c_{s+1} = c_s$ para cada $s \geq t$. Del tercer y cuarto supuesto obtenemos que $\hat{y_s} = y$ y $\hat{g_s} = g$ para cada $s \geq t$. Por lo tanto, utilizando el último supuesto, 
 
 $$
-c = c_t = (1-\beta)(1+r^*)(b_t-d_t) + \hat{y_s} - \hat{g_s} = y-g
+c = c_t = (1-\beta)(1+r^*)(b_t-d_t) + \hat{y_t} - \hat{g_t} = y-g
 $$
 Claramente $T_s = CA_s = 0$ para cada $s \geq t$.
 
