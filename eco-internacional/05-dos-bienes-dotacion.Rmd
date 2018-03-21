@@ -81,7 +81,7 @@ $$
 \begin{equation}
 P_{s+1}c_{s+1} = \beta(1 + r_s)P_sc_s
 (\#eq:optdosb)
-\begin{equation}
+\end{equation}
 $$
 
 Utilizando el valor de $P_s$ de la sección anterior, obtenemos que,
