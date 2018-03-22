@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="modelo-con-un-solo-bien-dotacion-y-gobierno.html">
-<link rel="next" href="modelo-con-un-solo-bien-gobierno-y-produccion.html">
+<link rel="prev" href="modelo-con-dos-bienes-dotacion.html">
+<link rel="next" href="examenes-de-parciales.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -160,62 +160,82 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="modelo-con-un-solo-bien-dotacion-y-terminos-de-intercambio" class="section level1">
-<h1><span class="header-section-number">4</span> Modelo con un solo bien, dotación y términos de intercambio</h1>
-<div id="terminos-de-intercambio" class="section level2">
-<h2><span class="header-section-number">4.1</span> Términos de intercambio</h2>
-<p>En este modelo se introduce la variable <span class="math inline">\(\Omega_s\)</span> que denota el precio de las exportaciones respecto al precio de las importaciones para cada <span class="math inline">\(s \geq t\)</span>. Se supone un país pequeño por lo que la secuencia <span class="math inline">\(\{\Omega_s\}_{s \geq t}\)</span> está dada.</p>
-</div>
-<div id="problema-de-optimizacion-2" class="section level2">
-<h2><span class="header-section-number">4.2</span> Problema de optimización</h2>
-<p>El objetivo del agente representativo es</p>
+<div id="modelo-con-dos-bienes-dotacion-y-gobierno" class="section level1">
+<h1><span class="header-section-number">7</span> Modelo con dos bienes, dotación y gobierno</h1>
+<div id="gobierno-1" class="section level2">
+<h2><span class="header-section-number">7.1</span> Gobierno</h2>
+<p>En este caso introducimos un gobierno que consume ambos bienes. Denotamos con <span class="math inline">\(g_{Ts}\)</span> la cantidad de bienes comerciables que consume el gobierno en el periodo <span class="math inline">\(s\)</span> y equivalentemente <span class="math inline">\(g_{ns}\)</span> la cantidad de bienes no comerciables que consume el gobierno en el periodo <span class="math inline">\(s\)</span>. Luego, el gobierno debe satisfacer la siguiente restricción presupuestal,</p>
 <p><span class="math display">\[
-\max_{c_s, b_{s+1}, s \geq t} \{ \sum_{s\geq t} \beta^{s-t}\ln(c_s):  c_s + b_{s+1} = \Omega_s y_s + (1+r_{s-1})b_s, s \geq t\}
-\]</span></p>
-<p>En este problema están dados <span class="math inline">\(\{y_s, r_{s-1}, \Omega_s\}_{s\geq t}\)</span> y <span class="math inline">\(b_t\)</span>. Se asume que <span class="math inline">\(y_s\)</span> se exporta por completo y <span class="math inline">\(c_s\)</span> se importa.</p>
-<p>Por otro lado, se define</p>
+g_{Ts} + p_s g_{ns} = p_s \tau_s + b_{s+1} - (1 + r_{s-1})b_s
+\]</span> Para cada <span class="math inline">\(s \geq t\)</span>. Iterando hacia adelante a partir del periodo <span class="math inline">\(s\)</span> se obtiene que</p>
 <p><span class="math display">\[
-T_s = \Omega_s y_s- c_s
-\]</span> La balanza comercial del país en el periodo <span class="math inline">\(s\)</span> y además</p>
-<p><span class="math display">\[
-CA_s = b_{s+1} - b_s = T_s + r_{s-1}b_s
-\]</span> La cuenta corriente del país en el periodo <span class="math inline">\(s\)</span>. La identidad anterior surge de la restricción presupuestal del agente representativo.</p>
-</div>
-<div id="condiciones-de-primer-orden-2" class="section level2">
-<h2><span class="header-section-number">4.3</span> Condiciones de primer orden</h2>
-<p>En este problema se sigue sosteniendo la ecuación de optimalidad de euler. Para cada <span class="math inline">\(s \geq t\)</span>,</p>
-<p><span class="math display">\[
-c_{s+1} = \beta(1 + r_{s})c_s
+\sum_{j\geq s} \Delta_j (g_{Tj}+p_jg_{nj}) = -(1+r_{s-1})b_s + \sum_{j \geq s} \Delta_j p_j \tau_j
 \]</span></p>
 </div>
-<div id="restriccion-presupuestal-2" class="section level2">
-<h2><span class="header-section-number">4.4</span> Restricción presupuestal</h2>
-<p>Iterando hacia adeltante con la restricción presupuestal del agente representativo a partir del periodo <span class="math inline">\(s\)</span> se obtiene que en el óptimo,</p>
+<div id="problema-de-optimizacion-5" class="section level2">
+<h2><span class="header-section-number">7.2</span> Problema de optimización</h2>
+<p>En este caso, el agente representativo busca,</p>
 <p><span class="math display">\[
-\sum_{j\geq s} \Delta_jT_j = -(1+r_{s-1})b_s 
-\]</span> O bien,</p>
-<p><span class="math display">\[
-\begin{equation}
-\sum_{j\geq s} \Delta_jc_j = (1+r_{s-1})b_s  + \sum_{j\geq s} \Delta_j\Omega_j y_j
-\end{equation}  
+\begin{align}
+\max_{c_{Ts}, c_{ns}, b_{s+1}, s\geq t}  \sum_{s\geq t}(\ln(c_s) + \ln(g_s)) \\
+ c_s &amp;= c_{Ts}^\gamma c_{ns}^{1-\gamma} \\
+c_{Ts} + p_sc_{ns} + p_s \tau_s + b_{t+1} &amp;= y_{Ts} + p_sy_{ns} + (1 + r_{s-1})b_s
+\end{align}
 \]</span></p>
-<p><em>En particular</em> para el periodo <span class="math inline">\(t\)</span> se verifica que,</p>
+<p>En este caso están dados <span class="math inline">\(\{y_{Ts}, y_{ns}, g_{Ts}, g_{ns}, r_{s-1}\}_{s\geq t}\)</span>, <span class="math inline">\(d_t\)</span> y <span class="math inline">\(b_T\)</span>. Sustituyendo la restricción presupuestal del gobierno en la restricción del agente representativo obtenemos que,</p>
 <p><span class="math display">\[
-\sum_{s \geq t} \Delta_s c_s = (1+r_{t-1})b_t + \sum_{s \geq t} \Delta_s \Omega_s y_s
+c_{Ts} + p_s c_{ns} + g_{Ts} + p_s g_{ns}+b_{t+1}-d_{t+1} = y_{Ts} + p_sy_{ns}+(1+r_{s-1})(b_s-d_s)
+\]</span> En este caso la condición de vaciado del mercado de bienes no comerciables es</p>
+<p><span class="math display">\[
+c_{ns} = y_{ns} - g_{ns}
+\]</span> Por lo que la balanza comercial está dada por,</p>
+<p><span class="math display">\[
+T_s = y_{T_s} - c_{Ts}-g_{Ts}
+\]</span> Y la cuenta corriente está dada por,</p>
+<p><span class="math display">\[
+CA_s = (b_{s+1}-d_{s+1})-(b_s-d_s) = T_s + r_{s-1}(b_s-d_s)  = y_{T_s} - c_{Ts}-g_{Ts} + r_{s-1}(b_s-d_s)
 \]</span></p>
 </div>
-<div id="solucion-2" class="section level2">
-<h2><span class="header-section-number">4.5</span> Solución</h2>
-<p>Iterando la ecuación de euler como en el capítulo inicial obetenemos que para cada <span class="math inline">\(s \geq t\)</span>,</p>
+<div id="condiciones-de-primer-orden-5" class="section level2">
+<h2><span class="header-section-number">7.3</span> Condiciones de primer orden</h2>
+<p>Las condiciones de optimalidad no sufren ninguna modificación dado que se trata de un impuesto de suma fija. De este modo, se tiene que para cualquier <span class="math inline">\(s \geq t\)</span>,</p>
 <p><span class="math display">\[
-c_s = (1-\beta)(1+r_{s-1})b_s + \widehat{\Omega_s y_s}
+c_{T(s+1)} = \beta(1+r_{s-1})c_{Ts}
+\]</span> Además,</p>
+<p><span class="math display">\[
+p_s = \frac{\gamma c_{Ts}}{(1-\gamma)c_{ns}}
+\]</span> Y la condición de vaciado,</p>
+<p><span class="math display">\[
+c_{ns} = y_{ns} - g_{ns}
 \]</span></p>
-<p>Donde <span class="math inline">\(\hat{\Omega_s y_s}\)</span> es el valor permanente de la dotación en términos de las importaciones en el periodo <span class="math inline">\(s\)</span>.</p>
+<p>Para cada <span class="math inline">\(s \geq t\)</span>.</p>
 </div>
-<div id="ejemplo-2" class="section level2">
-<h2><span class="header-section-number">4.6</span> Ejemplo</h2>
-<p>Los choques en los términos de intercambio son similares a los choques en la dotación.</p>
+<div id="restriccion-presupuestal-5" class="section level2">
+<h2><span class="header-section-number">7.4</span> Restricción presupuestal</h2>
+<p>Considerando la condición de vaciado de mercado e iterando la restricción presupuestal hacia adeltante, resulta que para cada <span class="math inline">\(s\geq t\)</span>,</p>
+<p><span class="math display">\[
+\sum_{j\geq s}\Delta_jT_j = -(1+r_{s-1})(b_s-d_s)
+\]</span></p>
+<p>O bien,</p>
+<p><span class="math display">\[
+\sum_{j\geq s}\Delta_j c_{Tj} = (1+r_{s-1})(b_s-d_s) + \sum_{j \geq s}\Delta_j (y_{Tj} - g_{Tj})
+\]</span></p>
+</div>
+<div id="solucion-4" class="section level2">
+<h2><span class="header-section-number">7.5</span> Solución</h2>
+<p>A partir de la ecuación de euler para los bienes comerciables se obtiene que para cada <span class="math inline">\(s \geq t\)</span> y <span class="math inline">\(j \geq s\)</span>,</p>
+<p><span class="math display">\[
+\Delta_j c_{Tj} = \beta^{s-j}c_{Ts}
+\]</span></p>
+<p>Por lo tanto, para cada <span class="math inline">\(s \geq t\)</span>,</p>
+<p><span class="math display">\[
+c_{Ts} = (1-\beta)(1+r_{s-1})(b_s - d_s) + \widehat{y_{Ts}} - \widehat{g_{Tj}}
+\]</span> ## Ejemplo</p>
+<div id="dotacion-del-gobierno-de-bienes-comerciables" class="section level3">
+<h3><span class="header-section-number">7.5.1</span> Dotación del gobierno de bienes comerciables</h3>
+<p>Hay un caso particular en el que el gobierno posee una dotación de bienes comerciables en todos los periodos, <span class="math inline">\(\{y_s^g\}_{s\geq t}\)</span>. Esto se agrega al modelo con <span class="math inline">\(y_s^g = -g_{Ts}\)</span> para cada <span class="math inline">\(s \geq t\)</span> y considerando la senda de impuestos <span class="math inline">\(\{\tau_s\}_{s\geq t}\)</span> como exógena.</p>
 
+</div>
 </div>
 </div>
             </section>
@@ -223,8 +243,8 @@ c_s = (1-\beta)(1+r_{s-1})b_s + \widehat{\Omega_s y_s}
           </div>
         </div>
       </div>
-<a href="modelo-con-un-solo-bien-dotacion-y-gobierno.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="modelo-con-un-solo-bien-gobierno-y-produccion.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="modelo-con-dos-bienes-dotacion.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="examenes-de-parciales.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

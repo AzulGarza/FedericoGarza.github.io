@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="modelo-con-un-solo-bien-dotacion-y-gobierno.html">
-<link rel="next" href="modelo-con-un-solo-bien-gobierno-y-produccion.html">
+<link rel="prev" href="modelo-con-dos-bienes-dotacion-y-gobierno.html">
+
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -160,61 +160,100 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="modelo-con-un-solo-bien-dotacion-y-terminos-de-intercambio" class="section level1">
-<h1><span class="header-section-number">4</span> Modelo con un solo bien, dotación y términos de intercambio</h1>
-<div id="terminos-de-intercambio" class="section level2">
-<h2><span class="header-section-number">4.1</span> Términos de intercambio</h2>
-<p>En este modelo se introduce la variable <span class="math inline">\(\Omega_s\)</span> que denota el precio de las exportaciones respecto al precio de las importaciones para cada <span class="math inline">\(s \geq t\)</span>. Se supone un país pequeño por lo que la secuencia <span class="math inline">\(\{\Omega_s\}_{s \geq t}\)</span> está dada.</p>
+<div id="examenes-de-parciales" class="section level1">
+<h1><span class="header-section-number">8</span> Exámenes de parciales</h1>
+<p>En esta sección se elaboran distintos exámenes parciales de la clase.</p>
+<div id="examen-octubre-2015" class="section level2">
+<h2><span class="header-section-number">8.1</span> Examen Octubre 2015</h2>
 </div>
-<div id="problema-de-optimizacion-2" class="section level2">
-<h2><span class="header-section-number">4.2</span> Problema de optimización</h2>
-<p>El objetivo del agente representativo es</p>
+<div id="pregunta-1" class="section level2">
+<h2><span class="header-section-number">8.2</span> Pregunta 1</h2>
+<p>Consideremos una economía pequeña y abierta con capital en la que <span class="math inline">\(\beta(1+r_{s-1}) = \beta(1+r^*)\)</span> para cada <span class="math inline">\(s \geq t\)</span>. Supongamos que el capital en el periodo <span class="math inline">\(t\)</span> satisface que <span class="math inline">\(Af&#39;(k_t) = r^*\)</span> y además los agentes esperan que la productividad aumenté a <span class="math inline">\(\lambda A\)</span>, con <span class="math inline">\(\lambda &gt; 1\)</span> para <span class="math inline">\(t+1 \leq s \leq t+h\)</span>, regresando a <span class="math inline">\(A\)</span> a partir <span class="math inline">\(t + h -1\)</span>, ¿el valor de <span class="math inline">\(b_{t+h+1}\)</span> es mayor entre ,ás grande sea h?</p>
+<div id="solucion-5" class="section level3">
+<h3><span class="header-section-number">8.2.1</span> Solución</h3>
+<p>Como hay dos niveles de productividad, conforme a la condición de optimalidad del capital, habrá dos niveles de capital óptimo. Definimos <span class="math inline">\(k_0\)</span> tal que <span class="math inline">\(Af&#39;(k_0) = r^*\)</span> y <span class="math inline">\(k_1\)</span> tal que <span class="math inline">\(\lambda Af&#39;(k_1) = r^*\)</span>. Luego, definiendo <span class="math inline">\(f_0 = f(k_0)\)</span> y <span class="math inline">\(f_1 = f(k_1)\)</span>, tenemos que</p>
+<table>
+<thead>
+<tr class="header">
+<th><span class="math inline">\(s\)</span></th>
+<th><span class="math inline">\(A_s\)</span></th>
+<th><span class="math inline">\(k_s\)</span></th>
+<th><span class="math inline">\(y_s\)</span></th>
+<th><span class="math inline">\(i_s\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(t\)</span></td>
+<td><span class="math inline">\(A\)</span></td>
+<td><span class="math inline">\(k_0\)</span></td>
+<td><span class="math inline">\(Af_0\)</span></td>
+<td><span class="math inline">\(k_{t+1}-k_t = 0\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(t+1\)</span></td>
+<td><span class="math inline">\(\lambda A\)</span></td>
+<td><span class="math inline">\(k_0\)</span></td>
+<td><span class="math inline">\(\lambda Af_0\)</span></td>
+<td><span class="math inline">\(k_{t+2}-k_{t+1} = k_1 - k_0\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(t+2\)</span></td>
+<td><span class="math inline">\(\lambda A\)</span></td>
+<td><span class="math inline">\(k_1\)</span></td>
+<td><span class="math inline">\(\lambda Af_1\)</span></td>
+<td><span class="math inline">\(k_{t+3}-k_{t+2} = 0\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(t+h\)</span></td>
+<td><span class="math inline">\(\lambda A\)</span></td>
+<td><span class="math inline">\(k_1\)</span></td>
+<td><span class="math inline">\(\lambda Af_1\)</span></td>
+<td><span class="math inline">\(k_{t+h+1} - k_{t+h} = k_0 - k_1\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(t + h + 1\)</span></td>
+<td><span class="math inline">\(A\)</span></td>
+<td><span class="math inline">\(k_0\)</span></td>
+<td><span class="math inline">\(Af_0\)</span></td>
+<td><span class="math inline">\(k_{t+h+2}-k_{t+h+1} = 0\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Además dado que se cumple la ecuación de euler, el consumo <span class="math inline">\(c\)</span> es el mismo para todos los periodos. Con esto, por un lado,</p>
 <p><span class="math display">\[
-\max_{c_s, b_{s+1}, s \geq t} \{ \sum_{s\geq t} \beta^{s-t}\ln(c_s):  c_s + b_{s+1} = \Omega_s y_s + (1+r_{s-1})b_s, s \geq t\}
+c = r^*b_t + \hat{y_t} - \hat{i_t}
 \]</span></p>
-<p>En este problema están dados <span class="math inline">\(\{y_s, r_{s-1}, \Omega_s\}_{s\geq t}\)</span> y <span class="math inline">\(b_t\)</span>. Se asume que <span class="math inline">\(y_s\)</span> se exporta por completo y <span class="math inline">\(c_s\)</span> se importa.</p>
-<p>Por otro lado, se define</p>
+<p>Y por otro lado,</p>
 <p><span class="math display">\[
-T_s = \Omega_s y_s- c_s
-\]</span> La balanza comercial del país en el periodo <span class="math inline">\(s\)</span> y además</p>
+c = r^* b_{t+h+1} + \widehat{y_{t+h+1}} - \widehat{i_{t+h+1}}
+\]</span> Por lo tanto,</p>
 <p><span class="math display">\[
-CA_s = b_{s+1} - b_s = T_s + r_{s-1}b_s
-\]</span> La cuenta corriente del país en el periodo <span class="math inline">\(s\)</span>. La identidad anterior surge de la restricción presupuestal del agente representativo.</p>
+b_{t+h+1} = b_t + \frac{1}{r^*}(\hat{y_t} - \widehat{y_{t+h+1}} - (\hat{i_t} - \widehat{i_{t+h+1}}))
+\]</span> Claramente <span class="math inline">\(\widehat{y_{t+h+1}} = Af_0\)</span> pues a partir de <span class="math inline">\(t+h+1\)</span> la situación vuelve a la normalidad. Lo mismo sucede con <span class="math inline">\(\widehat{i_{t+h+1}} = 0\)</span>. Por otro lado,</p>
+<p><span class="math display">\[
+\begin{align}
+\hat{y_t} &amp;= (1-\beta)\sum_{s\geq t}\beta^{s-t}y_s \\
+&amp; = (1-\beta)\left(Af_0 + \beta \lambda A f_0 + \sum_{s = t+2}^{t+h}\beta^{s-t}\lambda Af_1 + \sum_{s\geq t+h+1}\beta^{s-t} Af_0\right) \\
+&amp;= (1-\beta)\left((1+\beta \lambda)Af_0 + \frac{\beta^2(1-\beta^{h-1})\lambda Af_1}{1-\beta} + \frac{\beta^{h+1}Af_0}{1-\beta}\right) \\
+&amp;= ((1-\beta)(1+\beta \lambda) + \beta^{h+1})Af_0 + \beta^2(1-\beta^{h-1})\lambda Af_1
+\end{align}
+\]</span></p>
+<p>Para la inversión,</p>
+<p><span class="math display">\[
+\begin{align}
+\hat{i_t} &amp;= (1-\beta)\sum_{s\geq t} \beta^{s-t} i_s \\
+&amp;=(1-\beta)(\beta(k_1-k_0) + \beta^h (k_0-k_1)) = (1-\beta)\beta(1-\beta^h)(k_1 - k_0)
+\end{align}
+\]</span> Obsérvese que dados los rendimientos decrecientes a escala de <span class="math inline">\(f\)</span> se verfifica que <span class="math inline">\(k_1 - k_0 &gt; 0\)</span> por lo que <span class="math inline">\(\hat{i_t}&lt;0\)</span>. Así,</p>
+<p><span class="math display">\[
+b_{t+h+1} = b_t + \frac{1}{r^*}(((1-\beta)(1+\beta \lambda) + \beta^{h+1})Af_0 + \beta^2(1-\beta^{h-1})\lambda Af_1 - Af_0- (1-\beta)\beta(1-\beta^h)(k_1 - k_0) )
+\]</span></p>
 </div>
-<div id="condiciones-de-primer-orden-2" class="section level2">
-<h2><span class="header-section-number">4.3</span> Condiciones de primer orden</h2>
-<p>En este problema se sigue sosteniendo la ecuación de optimalidad de euler. Para cada <span class="math inline">\(s \geq t\)</span>,</p>
-<p><span class="math display">\[
-c_{s+1} = \beta(1 + r_{s})c_s
-\]</span></p>
 </div>
-<div id="restriccion-presupuestal-2" class="section level2">
-<h2><span class="header-section-number">4.4</span> Restricción presupuestal</h2>
-<p>Iterando hacia adeltante con la restricción presupuestal del agente representativo a partir del periodo <span class="math inline">\(s\)</span> se obtiene que en el óptimo,</p>
-<p><span class="math display">\[
-\sum_{j\geq s} \Delta_jT_j = -(1+r_{s-1})b_s 
-\]</span> O bien,</p>
-<p><span class="math display">\[
-\begin{equation}
-\sum_{j\geq s} \Delta_jc_j = (1+r_{s-1})b_s  + \sum_{j\geq s} \Delta_j\Omega_j y_j
-\end{equation}  
-\]</span></p>
-<p><em>En particular</em> para el periodo <span class="math inline">\(t\)</span> se verifica que,</p>
-<p><span class="math display">\[
-\sum_{s \geq t} \Delta_s c_s = (1+r_{t-1})b_t + \sum_{s \geq t} \Delta_s \Omega_s y_s
-\]</span></p>
-</div>
-<div id="solucion-2" class="section level2">
-<h2><span class="header-section-number">4.5</span> Solución</h2>
-<p>Iterando la ecuación de euler como en el capítulo inicial obetenemos que para cada <span class="math inline">\(s \geq t\)</span>,</p>
-<p><span class="math display">\[
-c_s = (1-\beta)(1+r_{s-1})b_s + \widehat{\Omega_s y_s}
-\]</span></p>
-<p>Donde <span class="math inline">\(\hat{\Omega_s y_s}\)</span> es el valor permanente de la dotación en términos de las importaciones en el periodo <span class="math inline">\(s\)</span>.</p>
-</div>
-<div id="ejemplo-2" class="section level2">
-<h2><span class="header-section-number">4.6</span> Ejemplo</h2>
-<p>Los choques en los términos de intercambio son similares a los choques en la dotación.</p>
+<div id="problema-2" class="section level2">
+<h2><span class="header-section-number">8.3</span> Problema 2</h2>
+<p>Se tiene una economía en la trayectoria de crecimiento balanceado <span class="math inline">\(\frac{A_{S+1}}{A_s} = 1 + \hat{A}\)</span> para cada <span class="math inline">\(s \geq t\)</span>, con <span class="math inline">\(b_t = 0\)</span> y se da una destrucción parcial e inesperada de su acervo de capital en el periodo <span class="math inline">\(t\)</span>. ¿Eveltualmente la cuenta corriente como la balanza comercial serán negativas?</p>
 
 </div>
 </div>
@@ -223,8 +262,8 @@ c_s = (1-\beta)(1+r_{s-1})b_s + \widehat{\Omega_s y_s}
           </div>
         </div>
       </div>
-<a href="modelo-con-un-solo-bien-dotacion-y-gobierno.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="modelo-con-un-solo-bien-gobierno-y-produccion.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="modelo-con-dos-bienes-dotacion-y-gobierno.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

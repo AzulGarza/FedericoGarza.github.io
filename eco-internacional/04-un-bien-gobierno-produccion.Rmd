@@ -78,7 +78,7 @@ El lado derecho de la ecuación anterior es conocida pues a partir de la condici
 
 ##Supuestos habituales
 
-Si $r_{s-1} = r^*$ para cada $s \geq t$ y $\beta(1 + r^*) = 1$ entonces, por la condición de euler, el consumo es el mismo en todos los periodos y 
+ Si $r_{s-1} = r^*$ para cada $s \geq t$ y $\beta(1 + r^*) = 1$ entonces, por la condición de euler, el consumo es el mismo en todos los periodos y 
 
 $$
 c = c_s = r^*(b_s - d_s) + \widehat{A_sf(k_s)} - \hat{g_s} - \hat{i_s}

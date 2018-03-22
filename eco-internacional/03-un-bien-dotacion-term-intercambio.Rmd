@@ -60,7 +60,7 @@ $$
 Iterando la ecuación de euler como en el capítulo inicial obetenemos que para cada $s \geq t$,
 
 $$
-c_s = (1-\beta)(1+r_{s-1})b_s + \hat{\Omega_s y_s}
+c_s = (1-\beta)(1+r_{s-1})b_s + \widehat{\Omega_s y_s}
 $$
 
 Donde $\hat{\Omega_s y_s}$ es el valor permanente de la dotación en términos de las importaciones en el periodo $s$.
