@@ -18,11 +18,11 @@ var line = d3.line()
     .x(function(d) { return x(d.date); })
     .y(function(d) { return y(d.close); });
 
-d3.tsv("./data/linechart.tsv", function(d) {
-  d.date = parseTime(d.date);
-  d.close = +d.close;
-  return d;
-}).then(function(data) {
+d3.tsv("./data/linechart.tsv").then(function(data) {
+  data.forEach(function(d){
+    d.date = parseTime(d.date);
+    d.close = +d.close;
+  })
 
   x.domain(d3.extent(data, function(d) { return d.date; }));
   y.domain(d3.extent(data, function(d) { return d.close; }));
