@@ -22,8 +22,7 @@ d3.tsv("./data/linechart.tsv", function(d) {
   d.date = parseTime(d.date);
   d.close = +d.close;
   return d;
-}, function(error, data) {
-  if (error) throw error;
+}).then(function(data) {
 
   x.domain(d3.extent(data, function(d) { return d.date; }));
   y.domain(d3.extent(data, function(d) { return d.close; }));
