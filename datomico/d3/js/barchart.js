@@ -18,7 +18,7 @@ var scaleY = d3.scaleLinear()
                .range([0, height])
 
 // Gráfica con datos
-d3.csv("/data/data.csv").then( function(data) {
+d3.csv("./data/data.csv").then( function(data) {
   // Type of data
   data.forEach( function(d) {
     d.value = +d.value;
