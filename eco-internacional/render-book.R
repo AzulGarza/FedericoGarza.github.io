@@ -1,3 +1,3 @@
 # Render book
 
-bookdown::render_book("index.Rmd", new_session = T)
+bookdown::render_book("index.Rmd", "bookdown::gitbook")
