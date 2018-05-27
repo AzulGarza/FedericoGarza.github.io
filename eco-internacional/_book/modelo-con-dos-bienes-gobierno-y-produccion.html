@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="modelo-con-dos-bienes-dotacion.html">
-<link rel="next" href="examenes-de-parciales.html">
+<link rel="prev" href="examenes-de-parciales.html">
+
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -143,6 +143,15 @@
 </ul></li>
 <li class="chapter" data-level="8.3" data-path="examenes-de-parciales.html"><a href="examenes-de-parciales.html#problema-2"><i class="fa fa-check"></i><b>8.3</b> Problema 2</a></li>
 </ul></li>
+<li class="chapter" data-level="9" data-path="modelo-con-dos-bienes-gobierno-y-produccion.html"><a href="modelo-con-dos-bienes-gobierno-y-produccion.html"><i class="fa fa-check"></i><b>9</b> Modelo con dos bienes, gobierno y producción</a><ul>
+<li class="chapter" data-level="9.1" data-path="modelo-con-dos-bienes-gobierno-y-produccion.html"><a href="modelo-con-dos-bienes-gobierno-y-produccion.html#gobierno-2"><i class="fa fa-check"></i><b>9.1</b> Gobierno</a></li>
+<li class="chapter" data-level="9.2" data-path="modelo-con-dos-bienes-gobierno-y-produccion.html"><a href="modelo-con-dos-bienes-gobierno-y-produccion.html#problema-de-optimizacion-6"><i class="fa fa-check"></i><b>9.2</b> Problema de optimización</a></li>
+<li class="chapter" data-level="9.3" data-path="modelo-con-dos-bienes-gobierno-y-produccion.html"><a href="modelo-con-dos-bienes-gobierno-y-produccion.html#restriccion-presupuestal-6"><i class="fa fa-check"></i><b>9.3</b> Restricción presupuestal</a></li>
+<li class="chapter" data-level="9.4" data-path="modelo-con-dos-bienes-gobierno-y-produccion.html"><a href="modelo-con-dos-bienes-gobierno-y-produccion.html#supuestos-habituales-4"><i class="fa fa-check"></i><b>9.4</b> Supuestos habituales</a></li>
+<li class="chapter" data-level="9.5" data-path="modelo-con-dos-bienes-gobierno-y-produccion.html"><a href="modelo-con-dos-bienes-gobierno-y-produccion.html#ejemplo-5"><i class="fa fa-check"></i><b>9.5</b> Ejemplo</a><ul>
+<li class="chapter" data-level="9.5.1" data-path="modelo-con-dos-bienes-gobierno-y-produccion.html"><a href="modelo-con-dos-bienes-gobierno-y-produccion.html#choque-en-la-productividad-1"><i class="fa fa-check"></i><b>9.5.1</b> Choque en la productividad</a></li>
+</ul></li>
+</ul></li>
 </ul>
 
       </nav>
@@ -160,11 +169,11 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="modelo-con-dos-bienes-dotacion-y-gobierno" class="section level1">
-<h1><span class="header-section-number">7</span> Modelo con dos bienes, dotación y gobierno</h1>
-<div id="gobierno-1" class="section level2">
-<h2><span class="header-section-number">7.1</span> Gobierno</h2>
-<p>En este caso introducimos un gobierno que consume ambos bienes. Denotamos con <span class="math inline">\(g_{Ts}\)</span> la cantidad de bienes comerciables que consume el gobierno en el periodo <span class="math inline">\(s\)</span> y equivalentemente <span class="math inline">\(g_{ns}\)</span> la cantidad de bienes no comerciables que consume el gobierno en el periodo <span class="math inline">\(s\)</span>. Luego, el gobierno debe satisfacer la siguiente restricción presupuestal,</p>
+<div id="modelo-con-dos-bienes-gobierno-y-produccion" class="section level1">
+<h1><span class="header-section-number">9</span> Modelo con dos bienes, gobierno y producción</h1>
+<div id="gobierno-2" class="section level2">
+<h2><span class="header-section-number">9.1</span> Gobierno</h2>
+<p>Como en el caso anterior, introducimos un gobierno que consume ambos bienes. Denotamos con <span class="math inline">\(g_{Ts}\)</span> la cantidad de bienes comerciables que consume el gobierno en el periodo <span class="math inline">\(s\)</span> y equivalentemente <span class="math inline">\(g_{ns}\)</span> la cantidad de bienes no comerciables que consume el gobierno en el periodo <span class="math inline">\(s\)</span>. Luego, el gobierno debe satisfacer la siguiente restricción presupuestal,</p>
 <p><span class="math display">\[
 g_{Ts} + p_s g_{ns} = p_s \tau_s + b_{s+1} - (1 + r_{s-1})b_s
 \]</span> Para cada <span class="math inline">\(s \geq t\)</span>. Iterando hacia adelante a partir del periodo <span class="math inline">\(s\)</span> se obtiene que</p>
@@ -172,68 +181,131 @@ g_{Ts} + p_s g_{ns} = p_s \tau_s + b_{s+1} - (1 + r_{s-1})b_s
 \sum_{j\geq s} \Delta_j (g_{Tj}+p_jg_{nj}) = -(1+r_{s-1})b_s + \sum_{j \geq s} \Delta_j p_j \tau_j
 \]</span></p>
 </div>
-<div id="problema-de-optimizacion-5" class="section level2">
-<h2><span class="header-section-number">7.2</span> Problema de optimización</h2>
+<div id="problema-de-optimizacion-6" class="section level2">
+<h2><span class="header-section-number">9.2</span> Problema de optimización</h2>
 <p>En este caso, el agente representativo busca,</p>
 <p><span class="math display">\[
 \begin{align}
-\max_{c_{Ts}, c_{ns}, b_{s+1}, s\geq t}  \sum_{s\geq t}(\ln(c_s) + \ln(g_s)) \\
+\max_{c_{Ts}, c_{ns}, b_{s+1}, s\geq t}  \sum_{s\geq t}\beta^{s-t}\ln(c_s) \\
  c_s &amp;= c_{Ts}^\gamma c_{ns}^{1-\gamma} \\
 c_{Ts} + p_sc_{ns} + p_s \tau_s + b_{t+1} &amp;= y_{Ts} + p_sy_{ns} + (1 + r_{s-1})b_s
 \end{align}
 \]</span></p>
-<p>En este caso están dados <span class="math inline">\(\{y_{Ts}, y_{ns}, g_{Ts}, g_{ns}, r_{s-1}\}_{s\geq t}\)</span>, <span class="math inline">\(d_t\)</span> y <span class="math inline">\(b_T\)</span>. Sustituyendo la restricción presupuestal del gobierno en la restricción del agente representativo obtenemos que,</p>
+<p>Ahora la principal diferencia es que los bienes son producidos; es decir, <span class="math inline">\(y_{Ts} = A_sF(L_{Ts})\)</span> y <span class="math inline">\(y_{ns} = G(L_{ns})\)</span>, donde <span class="math inline">\(L_i\)</span> es la cantidad de horas trabajadas en el sector <span class="math inline">\(i \in {Ts, ns}\)</span>. Se asume que las ofertas de trabajo anteriores son completamente inelásticas en cada periodo <span class="math inline">\(s\)</span>; además, notacionalmente <span class="math inline">\(L_s = L_{Ts} + L_{ns}\)</span>. La funciones de producción son crecientes a tasas decrecientes (es decir, <span class="math inline">\(F&#39; &gt; 0, F&#39;&#39;&lt;0, G&#39; &gt; 0, G&#39;&#39;&lt;0\)</span>).</p>
+<p>En este caso están dados <span class="math inline">\(\{L_{Ts}, L_{ns}, g_{Ts}, g_{ns}, r_{s-1}\}_{s\geq t}\)</span>, <span class="math inline">\(d_t\)</span> y <span class="math inline">\(b_t\)</span>. Sustituyendo la restricción presupuestal del gobierno en la restricción del agente representativo obtenemos que,</p>
 <p><span class="math display">\[
-c_{Ts} + p_s c_{ns} + g_{Ts} + p_s g_{ns}+b_{t+1}-d_{t+1} = y_{Ts} + p_sy_{ns}+(1+r_{s-1})(b_s-d_s)
-\]</span> En este caso la condición de vaciado del mercado de bienes no comerciables es</p>
+c_{Ts} + p_s c_{ns} + g_{Ts} + p_s g_{ns}+b_{t+1}-d_{t+1} = A_sF(L_{Ts}) + p_sG(L_{ns})+(1+r_{s-1})(b_s-d_s)
+\]</span></p>
+<p>En este caso la condición de vaciado del mercado de bienes no comerciables es</p>
 <p><span class="math display">\[
-c_{ns} = y_{ns} - g_{ns}
+c_{ns} = y_{ns} - g_{ns} = A_sF(L_{Ts}) - g_{ns}
 \]</span> Por lo que la balanza comercial está dada por,</p>
 <p><span class="math display">\[
-T_s = y_{T_s} - c_{Ts}-g_{Ts}
+T_s = y_{T_s} - c_{Ts}-g_{Ts} = A_sF(L_{Ts}) - c_{Ts} - g_{Ts}
 \]</span> Y la cuenta corriente está dada por,</p>
 <p><span class="math display">\[
 CA_s = (b_{s+1}-d_{s+1})-(b_s-d_s) = T_s + r_{s-1}(b_s-d_s)  = y_{T_s} - c_{Ts}-g_{Ts} + r_{s-1}(b_s-d_s)
-\]</span></p>
-</div>
-<div id="condiciones-de-primer-orden-5" class="section level2">
-<h2><span class="header-section-number">7.3</span> Condiciones de primer orden</h2>
-<p>Las condiciones de optimalidad no sufren ninguna modificación dado que se trata de un impuesto de suma fija. De este modo, se tiene que para cualquier <span class="math inline">\(s \geq t\)</span>,</p>
+\]</span> ## Condiciones de primer orden</p>
+<p>Dado que las ofertas laborales son completamente inelásticas, las condiciones de primer orden son similares a modelo anterior. De este modo, se tiene que para cualquier <span class="math inline">\(s \geq t\)</span>,</p>
 <p><span class="math display">\[
 c_{T(s+1)} = \beta(1+r_{s-1})c_{Ts}
 \]</span> Además,</p>
 <p><span class="math display">\[
-p_s = \frac{\gamma c_{Ts}}{(1-\gamma)c_{ns}}
-\]</span> Y la condición de vaciado,</p>
+p_s = \frac{(1-\gamma) c_{Ts}}{\gamma c_{ns}}
+\]</span> Además de lo anterior, se deben verificar las conficiones de optimalidad del mercado laboral, dado que las empresas maximizan ganancias. Se asume un mismo salario para los sectores comerciables y no comerciables de <span class="math inline">\(w_s\)</span> para cada <span class="math inline">\(s \geq t\)</span>; por lo tanto, en equilibrio, para cada <span class="math inline">\(s \geq t\)</span>,</p>
+<p><span class="math display">\[
+w_s = A_{Ts}F&#39;(L_{Ts}) = p_s G&#39;(L_{ns})
+\]</span> En este caso, tenemos dos condiciones de vaciado. Para el mercado de bienes no comerciables,</p>
 <p><span class="math display">\[
 c_{ns} = y_{ns} - g_{ns}
 \]</span></p>
-<p>Para cada <span class="math inline">\(s \geq t\)</span>.</p>
+<p>Para cada <span class="math inline">\(s \geq t\)</span>. Y para el mercado laboral,</p>
+<p><span class="math display">\[
+L_{Ts} + L_{ns} = L_s
+\]</span> Para cada <span class="math inline">\(s \geq t\)</span>.</p>
 </div>
-<div id="restriccion-presupuestal-5" class="section level2">
-<h2><span class="header-section-number">7.4</span> Restricción presupuestal</h2>
+<div id="restriccion-presupuestal-6" class="section level2">
+<h2><span class="header-section-number">9.3</span> Restricción presupuestal</h2>
 <p>Considerando la condición de vaciado de mercado e iterando la restricción presupuestal hacia adeltante, resulta que para cada <span class="math inline">\(s\geq t\)</span>,</p>
 <p><span class="math display">\[
 \sum_{j\geq s}\Delta_jT_j = -(1+r_{s-1})(b_s-d_s)
 \]</span></p>
 <p>O bien,</p>
 <p><span class="math display">\[
-\sum_{j\geq s}\Delta_j c_{Tj} = (1+r_{s-1})(b_s-d_s) + \sum_{j \geq s}\Delta_j (y_{Tj} - g_{Tj})
+\sum_{j\geq s}\Delta_j c_{Tj} = (1+r_{s-1})(b_s-d_s) + \sum_{j \geq s}\Delta_j (A_jF(L_{Tj}) - g_{Tj})
+\]</span> ## Solución</p>
+<p>Sabemos que <span class="math inline">\(A_{Ts}F&#39;(L_{Ts}) = p_sG&#39;(L-L_{Ts})\)</span> para cada <span class="math inline">\(s \geq t\)</span>. Por lo tanto, la oferta laboral óptima es una función de <span class="math inline">\(p_s\)</span> y <span class="math inline">\(A_{Ts}\)</span>; es decir, <span class="math display">\[
+L_{Ts} = l(p_s(-), A_{Ts}(+))
 \]</span></p>
-</div>
-<div id="solucion-4" class="section level2">
-<h2><span class="header-section-number">7.5</span> Solución</h2>
-<p>A partir de la ecuación de euler para los bienes comerciables se obtiene que para cada <span class="math inline">\(s \geq t\)</span> y <span class="math inline">\(j \geq s\)</span>,</p>
+<p>Esta función es homogénea de grado cero en su argumento. Por lo tanto,</p>
+<p><span class="math display">\[
+y_{Ts} = y_T(p_s(-), A_{Ts}(+))
+\]</span></p>
+<p>Que es homogénea de grado uno en su argumento y</p>
+<p><span class="math display">\[
+y_{ns} = y_n(p_s(+), A_{Ts}(-))
+\]</span></p>
+<p>Que es homogénea de grado cero. Siguiendo las condiciones de primer orden, se verifica que</p>
+<p><span class="math display">\[
+\frac{p_{s+1}}{p_s} = \frac{c_{T(s+1)}c_{ns}}{c_{Ts}c_{n(s+1)}} = \beta(1+r_s)\frac{c_{ns}}{c_{n(s+1)}}
+\]</span> Lo último utilizando la condición de euler. Así, con la condición de vaciado del mercado de bienes no comerciables se tiene que,</p>
+<p><span class="math display">\[
+\frac{p_{s+1}}{p_s} = \beta(1+r_s)\frac{y_{n}(p_s, A_{Ts}) - g_{ns}}{y_{n}(p_{s+1}, A_{T(s+1)}) - g_{n(s+1)}} 
+\]</span></p>
+<p>La anterior, es la solución implícita de la ecuación en diferencias de <span class="math inline">\(p_s\)</span>. Por otro lado, a partir de la ecuación de euler para los bienes comerciables se obtiene que para cada <span class="math inline">\(s \geq t\)</span> y <span class="math inline">\(j \geq s\)</span>,</p>
 <p><span class="math display">\[
 \Delta_j c_{Tj} = \beta^{s-j}c_{Ts}
 \]</span></p>
 <p>Por lo tanto, para cada <span class="math inline">\(s \geq t\)</span>,</p>
 <p><span class="math display">\[
-c_{Ts} = (1-\beta)(1+r_{s-1})(b_s - d_s) + \widehat{y_{Ts}} - \widehat{g_{Tj}}
-\]</span> ## Ejemplo</p>
-<div id="dotacion-del-gobierno-de-bienes-comerciables" class="section level3">
-<h3><span class="header-section-number">7.5.1</span> Dotación del gobierno de bienes comerciables</h3>
-<p>Hay un caso particular en el que el gobierno posee una dotación de bienes comerciables en todos los periodos, <span class="math inline">\(\{y_s^g\}_{s\geq t}\)</span>. Esto se agrega al modelo con <span class="math inline">\(y_s^g = -g_{Ts}\)</span> para cada <span class="math inline">\(s \geq t\)</span> y considerando la senda de impuestos <span class="math inline">\(\{\tau_s\}_{s\geq t}\)</span> como exógena.</p>
+c_{Ts} = (1-\beta)(1+r_{s-1})(b_s - d_s) + \widehat{y_T(p_s, A_{Ts})} - \widehat{g_{Ts}}
+\]</span></p>
+</div>
+<div id="supuestos-habituales-4" class="section level2">
+<h2><span class="header-section-number">9.4</span> Supuestos habituales</h2>
+<p>Si <span class="math inline">\(r_{s-1} = r^*\)</span> para cada <span class="math inline">\(s \geq t\)</span> y <span class="math inline">\(\beta(1 + r^*) = 1\)</span> entonces, por la condición de euler, el consumo de bienes comerciables es el mismo en todos los periodos y</p>
+<p><span class="math display">\[
+c_T = c_{Ts} = r^*(b_s-d_s) + \widehat{y_T(p_s, A_{Ts})} - \hat{g_{Ts}}
+\]</span></p>
+<p>En este caso, la cuenta corriente está dada por,</p>
+<p><span class="math display">\[
+CA_s = (y_T(p_s, A_{Ts}) - \widehat{y_T(p_s, A_{Ts})}) - (g_{Ts}-\hat{g_{Ts}})
+\]</span></p>
+</div>
+<div id="ejemplo-5" class="section level2">
+<h2><span class="header-section-number">9.5</span> Ejemplo</h2>
+<p>Supongamos que <span class="math inline">\(r_{s-1} = r^*\)</span> para cada <span class="math inline">\(s \geq t\)</span> y <span class="math inline">\(\beta(1 + r^*) = 1\)</span>. Además, supongamos que <span class="math inline">\(A_T = A_{Ts} = A_{T(s+1)}\)</span> para cada <span class="math inline">\(s \geq t\)</span>. Bajo estas condiciones se verifica que,</p>
+<p><span class="math display">\[
+p_sG&#39;(L-L_{Ts}) = A_TF&#39;(L_{Ts})
+\]</span></p>
+<p>Por lo tanto, <span class="math inline">\(p_0 = p_s = p_{s+1}\)</span> para cada <span class="math inline">\(s \geq t\)</span>. De lo anterior se sigue que la producción de bienes no comerciables y comerciables es la misma para todos los periodos; es decir,</p>
+<p><span class="math display">\[
+y_{T}(p_0, A_T) = y_T(p_s, A_{Ts}) 
+\]</span></p>
+<p>Para cada <span class="math inline">\(s \geq t\)</span>. Y,</p>
+<p><span class="math display">\[
+y_{n}(p_0, A_T) = y_n(p_s, A_{Ts})
+\]</span></p>
+<p>Para cada <span class="math inline">\(s \geq t\)</span>. Por lo anterior, se verifica que,</p>
+<p><span class="math display">\[
+c_{Ts} = c_T = r^*b_t + y_T(p_0, A_T) - \widehat{g_{Ts}}
+\]</span></p>
+<p>Y además,</p>
+<p><span class="math display">\[
+c_{ns} = c_n = y_n(p_0, A_T) - g_{ns}
+\]</span></p>
+<p>Obsérvese que con lo anterior, necesariamente <span class="math inline">\(g_{ns} = g_n\)</span> para cada <span class="math inline">\(s \geq t\)</span>. Así, se tiene que,</p>
+<p><span class="math display">\[
+p_0 = \frac{(1-\gamma)c_T}{\gamma c_n} = \frac{(1-\gamma)(r^*b_t + y_T(p_0, A_T)-\widehat{g_{T_s}})}{\gamma(y_n(p_0, A_T)-g_n)} 
+\]</span></p>
+<p>De donde se obtiene implícitamente el valor de <span class="math inline">\(p_0\)</span>.</p>
+<div id="choque-en-la-productividad-1" class="section level3">
+<h3><span class="header-section-number">9.5.1</span> Choque en la productividad</h3>
+<p>Supongamos que <span class="math inline">\(A_{Ts} = \lambda A_T\)</span> para cada <span class="math inline">\(s \geq t\)</span> y <span class="math inline">\(\lambda &gt;1\)</span>. Luego, si <span class="math inline">\(b_t = g_{Ts} = g_{n_s} = 0\)</span> para cada <span class="math inline">\(s \geq t\)</span>, se tiene que,</p>
+<p><span class="math display">\[
+p_0 = \frac{(1-\gamma)y_T(p_0, A_T)}{\gamma y_n(p_0, A_T)} = \lambda^{-1} \frac{(1-\gamma)y_T(\lambda p_0, \lambda A_T)}{\gamma y_n(\lambda p_0, \lambda A_T)} = \lambda^{-1} p_1
+\]</span></p>
+<p>Así, <span class="math inline">\(p_1 = \lambda p_0\)</span>, por la homogeneidad de las funciones.</p>
 
 </div>
 </div>
@@ -243,8 +315,8 @@ c_{Ts} = (1-\beta)(1+r_{s-1})(b_s - d_s) + \widehat{y_{Ts}} - \widehat{g_{Tj}}
           </div>
         </div>
       </div>
-<a href="modelo-con-dos-bienes-dotacion.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="examenes-de-parciales.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="examenes-de-parciales.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
