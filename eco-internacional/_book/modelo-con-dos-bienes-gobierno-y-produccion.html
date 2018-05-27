@@ -31,7 +31,7 @@
   
   
 <link rel="prev" href="examenes-de-parciales.html">
-
+<link rel="next" href="modelo-con-un-solo-bien-dotacion-gobierno-y-dinero.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -152,6 +152,21 @@
 <li class="chapter" data-level="9.5.1" data-path="modelo-con-dos-bienes-gobierno-y-produccion.html"><a href="modelo-con-dos-bienes-gobierno-y-produccion.html#choque-en-la-productividad-1"><i class="fa fa-check"></i><b>9.5.1</b> Choque en la productividad</a></li>
 </ul></li>
 </ul></li>
+<li class="chapter" data-level="10" data-path="modelo-con-un-solo-bien-dotacion-gobierno-y-dinero.html"><a href="modelo-con-un-solo-bien-dotacion-gobierno-y-dinero.html"><i class="fa fa-check"></i><b>10</b> Modelo con un solo bien, dotación, gobierno y dinero</a><ul>
+<li class="chapter" data-level="10.1" data-path="modelo-con-un-solo-bien-dotacion-gobierno-y-dinero.html"><a href="modelo-con-un-solo-bien-dotacion-gobierno-y-dinero.html#gobierno-3"><i class="fa fa-check"></i><b>10.1</b> Gobierno</a></li>
+<li class="chapter" data-level="10.2" data-path="modelo-con-un-solo-bien-dotacion-gobierno-y-dinero.html"><a href="modelo-con-un-solo-bien-dotacion-gobierno-y-dinero.html#problema-de-optimizacion-7"><i class="fa fa-check"></i><b>10.2</b> Problema de optimización</a></li>
+<li class="chapter" data-level="10.3" data-path="modelo-con-un-solo-bien-dotacion-gobierno-y-dinero.html"><a href="modelo-con-un-solo-bien-dotacion-gobierno-y-dinero.html#condiciones-de-primer-orden-6"><i class="fa fa-check"></i><b>10.3</b> Condiciones de primer orden</a><ul>
+<li class="chapter" data-level="10.3.1" data-path="modelo-con-un-solo-bien-dotacion-gobierno-y-dinero.html"><a href="modelo-con-un-solo-bien-dotacion-gobierno-y-dinero.html#bonos"><i class="fa fa-check"></i><b>10.3.1</b> Bonos</a></li>
+<li class="chapter" data-level="10.3.2" data-path="modelo-con-un-solo-bien-dotacion-gobierno-y-dinero.html"><a href="modelo-con-un-solo-bien-dotacion-gobierno-y-dinero.html#intertemporal-1"><i class="fa fa-check"></i><b>10.3.2</b> Intertemporal</a></li>
+<li class="chapter" data-level="10.3.3" data-path="modelo-con-un-solo-bien-dotacion-gobierno-y-dinero.html"><a href="modelo-con-un-solo-bien-dotacion-gobierno-y-dinero.html#monetaria"><i class="fa fa-check"></i><b>10.3.3</b> Monetaria</a></li>
+<li class="chapter" data-level="10.3.4" data-path="modelo-con-un-solo-bien-dotacion-gobierno-y-dinero.html"><a href="modelo-con-un-solo-bien-dotacion-gobierno-y-dinero.html#vaciado-de-dinero"><i class="fa fa-check"></i><b>10.3.4</b> Vaciado de dinero</a></li>
+</ul></li>
+<li class="chapter" data-level="10.4" data-path="modelo-con-un-solo-bien-dotacion-gobierno-y-dinero.html"><a href="modelo-con-un-solo-bien-dotacion-gobierno-y-dinero.html#restriccion-presupuestal-7"><i class="fa fa-check"></i><b>10.4</b> Restricción presupuestal</a></li>
+<li class="chapter" data-level="10.5" data-path="modelo-con-un-solo-bien-dotacion-gobierno-y-dinero.html"><a href="modelo-con-un-solo-bien-dotacion-gobierno-y-dinero.html#solucion-6"><i class="fa fa-check"></i><b>10.5</b> Solución</a><ul>
+<li class="chapter" data-level="10.5.1" data-path="modelo-con-un-solo-bien-dotacion-gobierno-y-dinero.html"><a href="modelo-con-un-solo-bien-dotacion-gobierno-y-dinero.html#sector-real-de-la-economia"><i class="fa fa-check"></i><b>10.5.1</b> Sector real de la economía</a></li>
+</ul></li>
+<li class="chapter" data-level="10.6" data-path="modelo-con-un-solo-bien-dotacion-gobierno-y-dinero.html"><a href="modelo-con-un-solo-bien-dotacion-gobierno-y-dinero.html#supuestos-habituales-5"><i class="fa fa-check"></i><b>10.6</b> Supuestos habituales</a></li>
+</ul></li>
 </ul>
 
       </nav>
@@ -201,7 +216,7 @@ c_{Ts} + p_s c_{ns} + g_{Ts} + p_s g_{ns}+b_{t+1}-d_{t+1} = A_sF(L_{Ts}) + p_sG(
 c_{ns} = y_{ns} - g_{ns} = A_sF(L_{Ts}) - g_{ns}
 \]</span> Por lo que la balanza comercial está dada por,</p>
 <p><span class="math display">\[
-T_s = y_{T_s} - c_{Ts}-g_{Ts} = A_sF(L_{Ts}) - c_{Ts} - g_{Ts}
+T_s = y_{Ts} - c_{Ts}-g_{Ts} = A_sF(L_{Ts}) - c_{Ts} - g_{Ts}
 \]</span> Y la cuenta corriente está dada por,</p>
 <p><span class="math display">\[
 CA_s = (b_{s+1}-d_{s+1})-(b_s-d_s) = T_s + r_{s-1}(b_s-d_s)  = y_{T_s} - c_{Ts}-g_{Ts} + r_{s-1}(b_s-d_s)
@@ -226,7 +241,7 @@ L_{Ts} + L_{ns} = L_s
 </div>
 <div id="restriccion-presupuestal-6" class="section level2">
 <h2><span class="header-section-number">9.3</span> Restricción presupuestal</h2>
-<p>Considerando la condición de vaciado de mercado e iterando la restricción presupuestal hacia adeltante, resulta que para cada <span class="math inline">\(s\geq t\)</span>,</p>
+<p>Considerando la condición de vaciado de mercado e iterando la restricción presupuestal hacia adelante, resulta que para cada <span class="math inline">\(s\geq t\)</span>,</p>
 <p><span class="math display">\[
 \sum_{j\geq s}\Delta_jT_j = -(1+r_{s-1})(b_s-d_s)
 \]</span></p>
@@ -315,8 +330,8 @@ p_0 = \frac{(1-\gamma)y_T(p_0, A_T)}{\gamma y_n(p_0, A_T)} = \lambda^{-1} \frac{
           </div>
         </div>
       </div>
-<a href="examenes-de-parciales.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="examenes-de-parciales.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="modelo-con-un-solo-bien-dotacion-gobierno-y-dinero.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

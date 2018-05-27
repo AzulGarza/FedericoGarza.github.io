@@ -42,7 +42,7 @@ $$
 Por lo que la balanza comercial está dada por,
 
 $$
-T_s = y_{T_s} - c_{Ts}-g_{Ts} = A_sF(L_{Ts}) - c_{Ts} - g_{Ts}
+T_s = y_{Ts} - c_{Ts}-g_{Ts} = A_sF(L_{Ts}) - c_{Ts} - g_{Ts}
 $$
 Y la cuenta corriente está dada por,
 
@@ -81,7 +81,7 @@ Para cada $s \geq t$.
 
 ## Restricción presupuestal
 
-Considerando la condición de vaciado de mercado e iterando la restricción presupuestal hacia adeltante, resulta que para cada $s\geq t$,
+Considerando la condición de vaciado de mercado e iterando la restricción presupuestal hacia adelante, resulta que para cada $s\geq t$,
 
 $$
 \sum_{j\geq s}\Delta_jT_j = -(1+r_{s-1})(b_s-d_s)

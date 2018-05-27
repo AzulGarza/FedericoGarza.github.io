@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
+<link rel="prev" href="modelo-con-dos-bienes-gobierno-y-produccion.html">
 
-<link rel="next" href="modelo-con-un-solo-bien-y-con-dotacion.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -184,23 +184,159 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<!--bookdown:title:end-->
-<!--bookdown:title:start-->
-<div id="introduccion" class="section level1">
-<h1><span class="header-section-number">1</span> Introducción</h1>
-<p>En este documento se exponen los modelos utilizados en la clase de Economía Interacional II. Se omiten alunos detalles algebraicos y en todos ellos se utiliza un agente representativo.</p>
-<div id="convenciones" class="section level2">
-<h2><span class="header-section-number">1.1</span> Convenciones</h2>
-<p>A lo largo de los caítulos se utilizan las siguientes convenciones:</p>
-<ul>
-<li>Se utiliza <span class="math inline">\(t\)</span> para denotar al periodo presente.</li>
-<li>Se utiliza <span class="math inline">\(s\)</span> para denotar un periodo arbitrario.</li>
-<li>Se utiliza <span class="math inline">\(h\)</span> para denotar un número de periodos arbitrario.</li>
-</ul>
-<p>Además se utiliza la siguiente notación:</p>
+<div id="modelo-con-un-solo-bien-dotacion-gobierno-y-dinero" class="section level1">
+<h1><span class="header-section-number">10</span> Modelo con un solo bien, dotación, gobierno y dinero</h1>
+<div id="gobierno-3" class="section level2">
+<h2><span class="header-section-number">10.1</span> Gobierno</h2>
+<p>La restricción presupuestal del gobierno está dada por,</p>
 <p><span class="math display">\[
-\sum_{s = t}^\infty x_s = \sum_{s \geq t} x_s
-\]</span> Para cualquier variable <span class="math inline">\(x_s\)</span>.</p>
+P_s g_s = P_s \tau_s + M_s - M_{s-1} + D_{s+1} - D_s(1+R_{s-1})
+\]</span> Donde <span class="math inline">\(M_s\)</span> es la cantidad nominal de dinero.</p>
+</div>
+<div id="problema-de-optimizacion-7" class="section level2">
+<h2><span class="header-section-number">10.2</span> Problema de optimización</h2>
+<p>En este caso, el agente representativo busca,</p>
+<p><span class="math display">\[
+\begin{align}
+\max_{c_{s}, m_s, B_{s+1}, B^*_{s+1}, s\geq t}  \sum_{s\geq t}\beta^{s-t}\left(\ln(c_s) + \eta \ln\left(\frac{m_s}{P_s}\right) \right) \\
+P_sc_{s} + B_{s+1} + \varepsilon_s B^*_{s+1} + m_s + P_s \tau_s &amp;= P_s y_{s} + (1 + R_{s-1})B_s + \varepsilon_{s} (1 + R^*_{s-1})B^*_s + m_{s-1}
+\end{align}
+\]</span></p>
+<p>Donde ahora <span class="math inline">\(B_s\)</span> es el valor nominal de lo bonos nacionales y <span class="math inline">\(B^*_s\)</span> es el valor nominal de los bonos adquiridos en el extranjero. Ademas, <span class="math inline">\(\varepsilon_s\)</span> es el tipo de cambio en el periodo <span class="math inline">\(s \geq t\)</span>; es decir,</p>
+<p><span class="math display">\[
+\varepsilon_s = \frac{P_s}{P^*_s}
+\]</span></p>
+<p>Además, <span class="math inline">\(m_s\)</span> es la cantidad de dinero que el agente demanda. Se define la condición de paridad descubierta de las tasas de interés como,</p>
+<p><span class="math display">\[
+1+R_s = (1+R^*_s)\frac{\varepsilon_{s+1}}{\varepsilon_s}
+\]</span> Se define, además,</p>
+<p><span class="math display">\[
+1 + r_s = (1+R^*_s)\frac{P^*_s}{P^*_{s+1}} 
+\]</span> Esta tasa de interés real es la misma a nivel mundial. Además, se verifica por la paridad descubierta de las tasas de interés y de la definición de tipo de cambio que,</p>
+<p><span class="math display">\[
+1 + r_s = (1+R_s)\frac{P_s}{P_{s+1}}
+\]</span> Observemos además que,</p>
+<p><span class="math display">\[
+\frac{(1+R_{s-1})B_s}{P_{s}} = \frac{(1+R_{s-1})B_sP_{s-1}}{P_{s}P_{s-1}} = (1+r_s)b_s
+\]</span></p>
+<p>Lo anterior también se cumple para <span class="math inline">\(D_t\)</span>. Observemos además, que</p>
+<p><span class="math display">\[
+\frac{\varepsilon_{s} (1 + R^*_{s-1})B^*_s}{P_{s}} = \frac{(1 + R^*_{s-1})B^*_s}{P^*_{s}} = \frac{(1+R^*_{s-1})B^*_sP^*_{s-1}}{P^*_{s}P^*_{s-1}} = (1+r_s)b^*_s
+\]</span></p>
+<p>Definimos <span class="math inline">\(a_s = b^*_s\)</span>, para cada <span class="math inline">\(s\geq t\)</span>. En este caso, la balanza comercial está dada por,</p>
+<p><span class="math display">\[
+T_s = y_{s} - c_{s}-g_{s} 
+\]</span></p>
+<p>En tanto que, usando la condición de vaciado del mercado de dinero <span class="math inline">\(M_s = m_s\)</span>,7 la cuenta corriente está dada por,</p>
+<p><span class="math display">\[
+CA_s = (a_{s+1} -a_s) + (b_{s+1}-b_{s})-(d_{s+1}-d_s) = T_s + r_{s-1}(a_s + b_s-d_s)  = y_{s} - c_{s}-g_{s} + r_{s-1}(a_s + b_s-d_s)
+\]</span></p>
+</div>
+<div id="condiciones-de-primer-orden-6" class="section level2">
+<h2><span class="header-section-number">10.3</span> Condiciones de primer orden</h2>
+<div id="bonos" class="section level3">
+<h3><span class="header-section-number">10.3.1</span> Bonos</h3>
+<p>A partir de las condiciones de primer orden se verifica la condición de paridad descubierta de las tasas de interés,</p>
+<p><span class="math display">\[
+1 + R_s =   (1 + R^*_s)\frac{\varepsilon_{s+1}}{\varepsilon_s}
+\]</span></p>
+<p>Para cada <span class="math inline">\(s \geq t\)</span>.</p>
+</div>
+<div id="intertemporal-1" class="section level3">
+<h3><span class="header-section-number">10.3.2</span> Intertemporal</h3>
+<p>Para cada <span class="math inline">\(s \geq t\)</span>, se verifica que</p>
+<p><span class="math display">\[
+P_{s+1}c_{s+1} = \beta (1+R_s)P_s c_s
+\]</span></p>
+<p>Usando la paridad descubierta de las tasas de interés y la ley de un solo precio, se verifica que</p>
+<p><span class="math display">\[
+c_{s+1} = \beta(1+r_s)c_s
+\]</span></p>
+<p>¡La ecuación de euler habitual!</p>
+</div>
+<div id="monetaria" class="section level3">
+<h3><span class="header-section-number">10.3.3</span> Monetaria</h3>
+<p>La condición de optimalidad es la siguiente:</p>
+<p><span class="math display">\[
+\eta c_s = \left(1-\frac{1}{1+R_s}\right) \frac{m_s}{P_s} = \left(1-\frac{1}{1+R_s}\right) z_s
+\]</span></p>
+<p>Recordemos que,</p>
+<p><span class="math display">\[
+1 + R_s = (1+r_s)\frac{P_{s+1}}{P_{s}} = (1+r_s)\frac{M_{s+1}}{M_s}\frac{z_{s}}{z_{s+1}}
+\]</span> Por lo tanto, en equilibrio,</p>
+<p><span class="math display">\[
+\eta c_s = \left(1-\frac{1}{1+r_s}\frac{M_{s}}{M_{s+1}}\frac{z_{s+1}}{z_{s}}\right) z_s
+\]</span> Despejando <span class="math inline">\(z_{s+1}\)</span> obtenemos que,</p>
+<p><span class="math display">\[
+\left(\frac{1}{1+r_s}\frac{M_s}{M_{s+1}}\right)z_{s+1} = z_s - \eta c_s
+\]</span></p>
+<p>Que es una ecuación de diferencias en <span class="math inline">\(z_s\)</span> de orden uno.</p>
+</div>
+<div id="vaciado-de-dinero" class="section level3">
+<h3><span class="header-section-number">10.3.4</span> Vaciado de dinero</h3>
+<p>En el óptimo, se debe verificar que</p>
+<p><span class="math display">\[
+M_s = m_s
+\]</span></p>
+<p>Para cada <span class="math inline">\(s \geq t\)</span>.</p>
+</div>
+</div>
+<div id="restriccion-presupuestal-7" class="section level2">
+<h2><span class="header-section-number">10.4</span> Restricción presupuestal</h2>
+<p>Considerando la condición de vaciado de mercado e iterando la restricción presupuestal hacia adelante, resulta que para cada <span class="math inline">\(s\geq t\)</span>,</p>
+<p><span class="math display">\[
+\sum_{j\geq s}\Delta_jT_j = -(1+r_{s-1})(a_s + b_s-d_s)
+\]</span></p>
+<p>O bien,</p>
+<p><span class="math display">\[
+\sum_{j\geq s}\Delta_j c_{j} = (1+r_{s-1})(a_s + b_s-d_s) + \sum_{j \geq s}\Delta_j (y_j - g_{j})
+\]</span></p>
+</div>
+<div id="solucion-6" class="section level2">
+<h2><span class="header-section-number">10.5</span> Solución</h2>
+<div id="sector-real-de-la-economia" class="section level3">
+<h3><span class="header-section-number">10.5.1</span> Sector real de la economía</h3>
+<p>A partir de la ecuación de euler se verfifica que para cada <span class="math inline">\(s \geq t\)</span> y cada <span class="math inline">\(j \geq s\)</span>,</p>
+<p><span class="math display">\[
+\Delta_j c_j = \beta^{j-s} \Delta_s c_s
+\]</span> Por lo que, en equilibrio, el valor del consumo en el periodo <span class="math inline">\(s\)</span> está dado por,</p>
+<p><span class="math display">\[
+c_s = (1-\beta)(1 + r_{s-1})(a_s + b_s-d_s) + \hat{y_s} - \hat{g_s}
+\]</span> ### Sector monetario de la economía</p>
+<p>Conociendo <span class="math inline">\(c_s\)</span> para cada <span class="math inline">\(s \geq t\)</span>, se tiene que,</p>
+<p><span class="math display">\[
+\left(\frac{1}{1+r_s}\frac{M_s}{M_{s+1}}\right)z_{s+1} = z_s - \eta c_s
+\]</span></p>
+</div>
+</div>
+<div id="supuestos-habituales-5" class="section level2">
+<h2><span class="header-section-number">10.6</span> Supuestos habituales</h2>
+<p>Si <span class="math inline">\(r_{s-1} = r\)</span> para cada <span class="math inline">\(s \geq t\)</span> y <span class="math inline">\(\beta(1+r) = 1\)</span> entonces, para la parte real,</p>
+<p><span class="math display">\[
+c = c_s = r(a_t + b_t-d_t) + \hat{y_t} - \hat{g_t}
+\]</span> En tanto que para la parte monetaria,</p>
+<p><span class="math display">\[
+\left(\beta\frac{M_s}{M_{s+1}}\right)z_{s+1} = z_s - \eta c_s
+\]</span></p>
+<p>Si <span class="math inline">\(M_{s+1} = (1+\hat{M})M_s\)</span> para cada <span class="math inline">\(s \geq t\)</span> entonces,</p>
+<p><span class="math display">\[
+\frac{\beta}{1+ \hat{M}}z_{s+1} = z_s - \eta c_s
+\]</span></p>
+<p>Cuya solución es</p>
+<p><span class="math display">\[
+z = z_s = \left(1-\frac{\beta}{1+\hat{M}}\right)^{-1}\eta c
+\]</span></p>
+<p>Como se tiene que,</p>
+<p><span class="math display">\[
+\eta c_s = \left(1-\frac{1}{1+R_s}\right) z_s
+\]</span></p>
+<p>Entonces,</p>
+<p><span class="math display">\[
+1 + R_s = 1+ R = \frac{1+\hat{M}}{\beta}
+\]</span> Utilizando la ley de un solo precio, llegamos a que,</p>
+<p><span class="math display">\[
+\varepsilon_s = \frac{P_s}{P^*_s} = \frac{1}{P^*_s} \frac{M_s}{z_s} = \frac{1}{P^*_s}\frac{M_t(1+\hat{M})^{s-t-1}(1+\hat{M}-\beta)}{\eta c}
+\]</span></p>
 
 </div>
 </div>
@@ -209,8 +345,8 @@
           </div>
         </div>
       </div>
+<a href="modelo-con-dos-bienes-gobierno-y-produccion.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
-<a href="modelo-con-un-solo-bien-y-con-dotacion.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

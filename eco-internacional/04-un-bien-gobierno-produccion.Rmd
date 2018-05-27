@@ -172,7 +172,7 @@ c_p &= \lim_{h \rightarrow \infty}  (1-\beta)\lambda^{1-\alpha}y_0 + \beta(1-\be
 $$
 Por lo tanto, se verifica que
 
-$$0o, _.nh cx
+$$
 c_h = (1-\beta^{h-1})c_p + \beta^{h-1}c_1
 $$
 
