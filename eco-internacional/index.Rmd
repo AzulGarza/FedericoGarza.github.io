@@ -1,4 +1,4 @@
-#Introducción
+# Introducción
 
 En este documento se exponen los modelos utilizados en la clase de Economía Interacional II. Se omiten alunos detalles algebraicos y en todos ellos se utiliza un agente representativo.
 
