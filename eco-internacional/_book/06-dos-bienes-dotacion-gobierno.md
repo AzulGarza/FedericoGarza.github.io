@@ -1,0 +1,104 @@
+#Modelo con dos bienes, dotación y gobierno
+
+
+## Gobierno
+
+En este caso introducimos un gobierno que consume ambos bienes. Denotamos con $g_{Ts}$ la cantidad de bienes comerciables que consume el gobierno en el periodo $s$ y equivalentemente $g_{ns}$ la cantidad de bienes no comerciables que consume el gobierno en el periodo $s$. Luego, el gobierno debe satisfacer la siguiente restricción presupuestal,
+
+$$
+g_{Ts} + p_s g_{ns} = p_s \tau_s + b_{s+1} - (1 + r_{s-1})b_s
+$$
+Para cada $s \geq t$. Iterando hacia adelante a partir del periodo $s$ se obtiene que 
+
+$$
+\sum_{j\geq s} \Delta_j (g_{Tj}+p_jg_{nj}) = -(1+r_{s-1})b_s + \sum_{j \geq s} \Delta_j p_j \tau_j
+$$
+
+
+## Problema de optimización
+
+En este caso, el agente representativo busca,
+
+$$
+\begin{align}
+\max_{c_{Ts}, c_{ns}, b_{s+1}, s\geq t}  \sum_{s\geq t}\beta^{s-t}(\ln(c_s) + \ln(g_s)) \\
+ c_s &= c_{Ts}^\gamma c_{ns}^{1-\gamma} \\
+c_{Ts} + p_sc_{ns} + p_s \tau_s + b_{t+1} &= y_{Ts} + p_sy_{ns} + (1 + r_{s-1})b_s
+\end{align}
+$$
+
+En este caso están dados $\{y_{Ts}, y_{ns}, g_{Ts}, g_{ns}, r_{s-1}\}_{s\geq t}$, $d_t$ y $b_T$. Sustituyendo la restricción presupuestal del gobierno en la restricción del agente representativo obtenemos que,
+
+$$
+c_{Ts} + p_s c_{ns} + g_{Ts} + p_s g_{ns}+b_{t+1}-d_{t+1} = y_{Ts} + p_sy_{ns}+(1+r_{s-1})(b_s-d_s)
+$$
+En este caso la condición de vaciado del mercado de bienes no comerciables es
+
+$$
+c_{ns} = y_{ns} - g_{ns}
+$$
+Por lo que la balanza comercial está dada por,
+
+$$
+T_s = y_{T_s} - c_{Ts}-g_{Ts}
+$$
+Y la cuenta corriente está dada por,
+
+$$
+CA_s = (b_{s+1}-d_{s+1})-(b_s-d_s) = T_s + r_{s-1}(b_s-d_s)  = y_{T_s} - c_{Ts}-g_{Ts} + r_{s-1}(b_s-d_s)
+$$
+
+## Condiciones de primer orden
+
+Las condiciones de optimalidad no sufren ninguna modificación dado que se trata de un impuesto de suma fija. De este modo, se tiene que para cualquier $s \geq t$,
+
+$$
+c_{T(s+1)} = \beta(1+r_{s-1})c_{Ts}
+$$
+Además,
+
+$$
+p_s = \frac{(1-\gamma) c_{Ts}}{\gamma c_{ns}}
+$$
+
+Y la condición de vaciado,
+
+$$
+c_{ns} = y_{ns} - g_{ns}
+$$
+
+Para cada $s \geq t$.
+
+## Restricción presupuestal
+
+Considerando la condición de vaciado de mercado e iterando la restricción presupuestal hacia adeltante, resulta que para cada $s\geq t$,
+
+$$
+\sum_{j\geq s}\Delta_jT_j = -(1+r_{s-1})(b_s-d_s)
+$$
+
+O bien, 
+
+$$
+\sum_{j\geq s}\Delta_j c_{Tj} = (1+r_{s-1})(b_s-d_s) + \sum_{j \geq s}\Delta_j (y_{Tj} - g_{Tj})
+$$
+
+## Solución
+
+A partir de la ecuación de euler para los bienes comerciables se obtiene que para cada $s \geq t$ y $j \geq s$,
+
+$$
+\Delta_j c_{Tj} = \beta^{s-j}c_{Ts}
+$$
+
+Por lo tanto, para cada $s \geq t$, 
+
+$$
+c_{Ts} = (1-\beta)(1+r_{s-1})(b_s - d_s) + \widehat{y_{Ts}} - \widehat{g_{Ts}}
+$$
+## Ejemplo
+
+### Dotación del gobierno de bienes comerciables
+
+Hay un caso particular en el que el gobierno posee una dotación de bienes comerciables en todos los periodos, $\{y_s^g\}_{s\geq t}$. Esto se agrega al modelo con $y_s^g = -g_{Ts}$ para cada $s \geq t$ y considerando la senda de impuestos $\{\tau_s\}_{s\geq t}$ como exógena.
+
