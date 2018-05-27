@@ -62,7 +62,7 @@ $$
 A partir del problema intertemporal se obtiene que, en equilibrio, para cada $s \geq t$,
 
 $$
-p_s = \frac{\gamma c_{Ts}}{(1-\gamma)c_{ns}}
+p_s = \frac{(1-\gamma) c_{Ts}}{\gamma c_{ns}}
 $$
 
 Además, con esto se verifica que 
@@ -140,10 +140,10 @@ $$
 
 ## Supuestos habituales
 
-Si $r_{s-1} = r^*$ para cada $s \geq t$ y $\beta(1 + r^*) = 1$ entonces, por la condición de euler, el consumo de bienes no comerciables es el mismo en todos los periodos y 
+Si $r_{s-1} = r^*$ para cada $s \geq t$ y $\beta(1 + r^*) = 1$ entonces, por la condición de euler, el consumo de bienes comerciables es el mismo en todos los periodos y 
 
 $$
-c = c_s = r^*b_s + \widehat{y_{Ts}} 
+c_T = c_{Ts} = r^*b_s + \widehat{y_{Ts}} 
 $$
 
 En este caso, la cuenta corriente está dada por,

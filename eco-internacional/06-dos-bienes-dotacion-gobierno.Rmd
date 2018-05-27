@@ -21,7 +21,7 @@ En este caso, el agente representativo busca,
 
 $$
 \begin{align}
-\max_{c_{Ts}, c_{ns}, b_{s+1}, s\geq t}  \sum_{s\geq t}(\ln(c_s) + \ln(g_s)) \\
+\max_{c_{Ts}, c_{ns}, b_{s+1}, s\geq t}  \sum_{s\geq t}\beta^{s-t}(\ln(c_s) + \ln(g_s)) \\
  c_s &= c_{Ts}^\gamma c_{ns}^{1-\gamma} \\
 c_{Ts} + p_sc_{ns} + p_s \tau_s + b_{t+1} &= y_{Ts} + p_sy_{ns} + (1 + r_{s-1})b_s
 \end{align}
@@ -58,8 +58,9 @@ $$
 Además,
 
 $$
-p_s = \frac{\gamma c_{Ts}}{(1-\gamma)c_{ns}}
+p_s = \frac{(1-\gamma) c_{Ts}}{\gamma c_{ns}}
 $$
+
 Y la condición de vaciado,
 
 $$
@@ -93,7 +94,7 @@ $$
 Por lo tanto, para cada $s \geq t$, 
 
 $$
-c_{Ts} = (1-\beta)(1+r_{s-1})(b_s - d_s) + \widehat{y_{Ts}} - \widehat{g_{Tj}}
+c_{Ts} = (1-\beta)(1+r_{s-1})(b_s - d_s) + \widehat{y_{Ts}} - \widehat{g_{Ts}}
 $$
 ## Ejemplo
 
